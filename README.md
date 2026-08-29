@@ -9,6 +9,7 @@ Este projeto organiza automaticamente arquivos extraídos de um pacote compactad
 3. Em seguida, ele percorre todos os arquivos extraídos.
 4. Para cada arquivo, verifica a extensão, como `.pdf`, `.jpg`, `.txt`, `.zip` e outras.
 5. Se a pasta correspondente a essa extensão ainda não existir, ela é criada automaticamente.
+
 6. O arquivo é movido para a pasta correta.
 
 Com isso, documentos, imagens, textos e outros tipos de arquivos ficam organizados de forma automática em subpastas.
@@ -45,3 +46,17 @@ organizador/
 ## Objetivo
 
 Simplificar a organização de arquivos após a extração de pastas compactadas, sem precisar separar manualmente cada tipo de arquivo.
+
+## Melhorias realizadas
+
+O projeto foi aprimorado para ficar mais robusto e fácil de usar. Entre as melhorias estão:
+
+- validação do arquivo informado pelo usuário
+- verificação se o caminho informado realmente é um arquivo válido
+- tratamento de erros quando o arquivo compactado não é suportado
+- criação da pasta de organização de forma segura
+- ignorar arquivos sem extensão para evitar falhas
+- organização dos arquivos em uma estrutura mais clara e controlada
+- uso de funções para deixar o código mais organizado e reutilizável
+
+Essas mudanças ajudam o programa a lidar melhor com entradas inesperadas e deixam a execução mais estável.
